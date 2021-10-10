@@ -1,0 +1,14 @@
+<script>
+	let car="audi";//global variable define outside the function not declare in another function get error
+	function add()
+	{
+	let result =33;//local variable define inside the function declare in any function not get error
+ 
+	console.log(result); ///33
+	console.log(car);///audi
+
+	}
+	add();
+	console.log(car);///audi
+	console.log(result);///Uncaught ReferenceError: result is not defined
+</script>

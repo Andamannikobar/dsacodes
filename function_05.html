@@ -1,0 +1,27 @@
+<script>
+	/*function  add() {
+		//console.log(arguments[3]);  ///3 is not in function so it gets undefined
+		console.log(arguments[7]);
+	}
+
+add(5,7,8);*/
+function add() ///without parameter pases
+{
+	if (arguments==0)
+	{
+		console.log("no arguments is passed !");    ///arguments 
+	}
+	else{
+		sum=0;
+		for(let i=0;i<arguments.length;i++)
+		{
+			sum=sum+arguments[i];
+		}
+		console.log(sum);  ///5
+	}
+}
+add(5);//5
+add(7);//7
+add(5,4,9,6);///24
+
+</script>
